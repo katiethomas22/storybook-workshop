@@ -1,0 +1,31 @@
+import type { Meta, StoryObj } from '@storybook/react';
+import { Button } from './Button';
+
+const meta: Meta<typeof Button> = { title: "Components/Button", component: Button };
+export default meta;
+
+type Story = StoryObj<typeof Button>;
+
+export const Primary: Story = {
+    args: {
+        label: "Button",
+        onClick: () => alert("Button clicked!"),
+        severity: "low"
+    }
+};
+
+// export const Secondary: Story = {
+//     args: {
+//         label: "Button",
+//         onClick: () => alert("Button clicked!"),
+//         severity: "medium"
+//     }
+// };
+
+// export const Tertiary: Story = {
+//     args: {
+//         label: "Button",
+//         onClick: () => alert("Button clicked!"),
+//         severity: "high"
+//     }
+// };
