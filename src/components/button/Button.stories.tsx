@@ -8,24 +8,13 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
     args: {
-        label: "Button",
-        onClick: () => alert("Button clicked!"),
-        severity: "low"
+        label: "Click me",
+        onClick: () => alert("Button clicked with custom callback!"),
     }
 };
 
-// export const Secondary: Story = {
-//     args: {
-//         label: "Button",
-//         onClick: () => alert("Button clicked!"),
-//         severity: "medium"
-//     }
-// };
-
-// export const Tertiary: Story = {
-//     args: {
-//         label: "Button",
-//         onClick: () => alert("Button clicked!"),
-//         severity: "high"
-//     }
-// };
+export const DefaultCallback: Story = {
+    args: {
+        label: "Click me for the default message",
+    }
+};
