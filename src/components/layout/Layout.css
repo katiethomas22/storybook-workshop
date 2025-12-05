@@ -1,0 +1,72 @@
+.layout-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--app-background, #fafafa);
+}
+
+.layout-main {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.layout-index {
+    width: 300px;
+    flex: 0 0 300px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.index-title {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+.index-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.index-item {
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #1f2937;
+    cursor: pointer;
+}
+
+.index-item:hover,
+.index-item:focus {
+    background: #f3f4f6;
+    outline: none;
+}
+
+.layout-content {
+    flex: 1 1 auto;
+    min-height: 200px;
+}
+
+@media (max-width: 640px) {
+    .layout-main {
+        padding: 12px;
+        flex-direction: column;
+    }
+
+    .layout-index {
+        display: none;
+    }
+}
