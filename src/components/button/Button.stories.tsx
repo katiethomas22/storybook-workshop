@@ -10,22 +10,7 @@ export const Primary: Story = {
     args: {
         label: "Button",
         onClick: () => alert("Button clicked!"),
-        severity: "low"
     }
 };
 
-// export const Secondary: Story = {
-//     args: {
-//         label: "Button",
-//         onClick: () => alert("Button clicked!"),
-//         severity: "medium"
-//     }
-// };
 
-// export const Tertiary: Story = {
-//     args: {
-//         label: "Button",
-//         onClick: () => alert("Button clicked!"),
-//         severity: "high"
-//     }
-// };
