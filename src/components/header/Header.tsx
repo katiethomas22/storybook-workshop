@@ -1,11 +1,9 @@
-
 import { Button } from '../button/Button';
 import './header.css';
 
 type User = {
   name: string;
 };
-
 
 export interface HeaderProps {
   user?: User;
@@ -16,7 +14,6 @@ export const Header = ({ user, title = "" }: HeaderProps) => (
   <header>
     <div className="storybook-header">
       <div>
-
         <h1>Study Buddy</h1>
       </div>
       <div><h4>{title}</h4></div>

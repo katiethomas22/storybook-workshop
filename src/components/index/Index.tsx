@@ -21,9 +21,7 @@ export const Index: React.FC<IndexProps> = ({
                         <li
                             key={topic}
                             className="index-item"
-
                             onClick={() => onSelectTopic?.(topic)}
-
                         >
                             {topic}
                         </li>

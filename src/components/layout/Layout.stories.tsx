@@ -16,10 +16,23 @@ type Story = StoryObj<typeof meta>;
 
 const flashcardData = [{ question: 'What is the capital of Scotland?', answer: 'Edinburgh' }, { question: 'What is the capital of England?', answer: 'London' }, { question: 'What is the capital of Wales?', answer: 'Cardiff' }];
 
+const topics = [
+    'Capital Cities',
+    'American Presidents',
+    'Song Titles',
+    'World Rivers',
+    'Famous Scientists',
+    'Programming Languages',
+];
+
 
 export const CapitalCities: Story = {
-    render: () => (
-        <Layout user={{ name: 'Jane Doe' }} >
+    args: {
+        user: { name: 'Jane Doe' },
+        topics: topics,
+    },
+    render: (args) => (
+        <Layout {...args}>
             <Page flashcardData={flashcardData} />
         </Layout>
     ),

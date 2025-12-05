@@ -7,19 +7,13 @@ import { Index } from '../index/Index';
 export interface LayoutProps {
     user?: { name: string };
     children?: React.ReactNode;
+    topics: string[];
 
 }
 
-export const Layout: React.FC<LayoutProps> = ({ user, children }: LayoutProps) => {
+export const Layout: React.FC<LayoutProps> = ({ user, children, topics }: LayoutProps) => {
 
-    const topics = [
-        'Capital Cities',
-        'American Presidents',
-        'Song Titles',
-        'World Rivers',
-        'Famous Scientists',
-        'Programming Languages',
-    ];
+
 
     return (
         <article className="layout-root">
